@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(238, 242, 242);
+}
+.main-grid-container {
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    grid-gap: 0.6rem;
+    justify-content: center;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 0.8rem;
+    background-color: rgb(238, 242, 242);
+}
+h1 {
+    color:  rgb(37, 167, 190);
+    }
+.header {
+    grid-row: 1;
+    text-align: center;
+}
+.drinks-section {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 10rem);
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem;
+}
+.section {
+    text-align: center;
+}
+.section img {
+    width: 5rem;
+    border-radius: 1rem;
+}
+.section a {
+    text-decoration: none;
+    color: black;
+}
+@media (min-width: 900px) {
+    .drinks-section {
+        grid-template-columns: repeat(3, 15rem);
+        grid-template-rows: repeat(2, 10rem);
+    }
+}
