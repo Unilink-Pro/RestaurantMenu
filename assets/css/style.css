@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    /* background */
+    --bg-color: hsl(245, 30%, 7%);
+    --card-color-dark: hsl(245, 21%, 10%);
+    --card-color-light: hsl(0, 0%, 100%);
+    --main-btn: hsl(247, 90%, 68%);
+    --main-btns: 247, 90%, 68%;
+    --card: var(--card-color-light);
+
+    /* --muted-btn-light: hsl(249, 100%, 97%); */
+    --muted-btn-light: hsl(246.7, 31%, 94.3%);
+    --muted-btn-dark: hsl(245, 16%, 13%);
+    --border-light: hsl(312, 19%, 90%);
+    --border-dark: hsl(245, 16%, 13%);
+    --muted-tabs-light: hsl(248, 50%, 88%);
+    --muted-tabs-dark: hsl(247, 7%, 25%);
+    --muted-tabs: var(--muted-tabs-light);
+    /* -- */
+    --muted-btn: var(--muted-btn-light);
+    --body-color: #0f9fff;
+    --sidebar-color: #fff;
+    --primary-color: #140d12;
+    --primary-color-light: #f5f8fa;
+    --primary-color-btn: #b6ccfe;
+    --toggle-color: rgb(2, 2, 2);
+    --text-color: #140d12;
+    --border: var(--border-light);
+    --hover-color: #caf0f8;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    /* overflow: hidden; */
+}
+
+::selection {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --body-color: var(--bg-color);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    background: red;
+}
+
+.center {
+    background: red;
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.footer {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.layout {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-auto-flow: column;
+}
