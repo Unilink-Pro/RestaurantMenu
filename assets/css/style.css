@@ -43,11 +43,11 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
     transition: var(--tran-05);
     /* overflow: hidden; */
+    /* background-image: url("../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg"); */
 }
-
 ::selection {
     background-color: var(--hover-color);
     color: var(--text-color);
@@ -56,7 +56,7 @@ body {
 body.dark {
     --body-color: var(--bg-color);
 }
-.container {
+/* .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -72,8 +72,18 @@ body.dark {
 
 .footer {
     grid-area: 3 / 2 / 4 / 3;
+} */
+.img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg");
+    object-fit: cover;
 }
 .layout {
+    /* background-color: #ff68d4; */
+    color: #b6ccfe;
+    text-align: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 
@@ -82,4 +92,17 @@ body.dark {
     grid-template-columns: 1fr;
     gap: 1rem;
     grid-auto-flow: column;
+}
+.dropShadow {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+.content {
+    /* text-align: center; */
+    /* height: 100%; */
+    background-color: red;
+    vertical-align: middle;
+}
+.btn {
+    height: 10rem;
+    width: 20rem;
 }
