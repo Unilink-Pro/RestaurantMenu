@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
 .main-grid-container {
     display: grid;
-    grid-template-rows: 5rem 1fr;
     grid-gap: 0.6rem;
     justify-content: center;
 }
@@ -11,24 +18,35 @@ text-align: center;
 .section img {
     width: 5rem;
     border-radius: 1.4rem;
-    padding: 1rem;
 }
 
 .section {
-    /* display: flex; */
-   background-color: #333;
+    display: flex; 
+    /* background-color: #333;  */
    border-radius:1rem;
    border: 1px solid #ddd;
    text-align: center;
    position: relative;
    transition: .3s;
-    padding: 1rem;
     margin: 1rem;
 }
-/* .section:hover {
-border-color: rgb(37, 167, 190);
-border-radius: 50px;
-} */
+
+.section .bg2 {
+ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(2px);
+    object-fit: cover;
+
+}
+.drink-details {
+  padding: 5rem;
+  display: flex;
+  justify-content: baseline;
+}
 .section span {
 position: absolute;
 right: 0;
@@ -37,33 +55,32 @@ background-color: rgb(37, 167, 190);
 padding: 8px 20px;
 font-size: 20px;
 font-weight: 700;
-border-radius:15px 0 0 0 ;
+border-radius:15px 0 15px 0;
 }
-.section img {
-    max-width: 80px;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    padding: 3px;
-    /* transition: .3s; */
-}
-/* .section:hover img {
-    border-radius: 50%;
-} */
 .section h4 {
     border-bottom: 1px dashed #ddd;
-    margin: 10px 0;
-    padding-bottom: 10px;
+    position: absolute;
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: 1rem;
+    left: 60px;
+    right: 60px;
+    top: 60px;
+    bottom: 100px;
 }
-/* .section p {
-    text-align: left;
-} */
+.section p {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 60px;
+  margin: 40px 0 40px 0;
+  top: 60px;
+}
+
 @media (min-width: 900px) {
     .drinks-section{
         display: grid;
         grid-template-columns: repeat(3, 15rem);
-        grid-template-rows: repeat(6, 10rem);
+        grid-template-rows: repeat(5, 10rem);
         grid-gap: 2rem;
     }
     .section{
@@ -72,16 +89,8 @@ border-radius:15px 0 0 0 ;
     }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* body {
-    font-size: 16px;
-    line-height: 24px;
-} */
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -129,17 +138,20 @@ border-radius:15px 0 0 0 ;
   }
   
   @media (max-width: 45em) {
-    .tabs .tab,
+    /* .tabs .tab,
   .tabs label {
       order: initial;
-    }
+    } */
   
     .tabs label {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 0.2rem;
+      width: 50%;
+      margin-right: 0px;
+      /* padding: 20px; */
+      /* margin-top: 0.2rem; */
+      /* position: fixed; */
     }
   }
+
   /**
    * Generic Styling
   */
