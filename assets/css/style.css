@@ -59,14 +59,16 @@ body.dark {
     --body-color: var(--bg-color);
 }
 /* .container {
+    background: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg) no-repeat center center fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     background: red;
-}
-
+} */
+.
+/* 
 .center {
     background: red;
     grid-area: 2 / 1 / 3 / 4;
@@ -75,7 +77,7 @@ body.dark {
 .footer {
     grid-area: 3 / 2 / 4 / 3;
 } */
-html {
+.bg-img {
     background: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -115,7 +117,8 @@ html {
 .btn {
     margin: 0.5rem;
     height: 10rem;
-    width: 20rem;
+    width: 25rem;
+    display: flex;
     /* border: 1px solid white; */
     /* border-radius: 1rem; */
     cursor: pointer;
@@ -127,29 +130,42 @@ html {
 /* <!-- HTML !--> */
 
 /* CSS */
-.button-86 {
+
+.btn-effect {
     all: unset;
-    width: 100px;
+    /* width: 100px; */
     height: 30px;
-    font-size: 16px;
+    font-size: 1.5rem;
     background: transparent;
     border: none;
     position: relative;
     color: #f0f0f0;
     cursor: pointer;
     z-index: 1;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+    padding: 50px 20px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* white-space: nowrap;
     user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    -webkit-user-select: none; */
+    /* touch-action: manipulation; */
 }
-
-.button-86::after,
-.button-86::before {
+.img-main .btn-effect {
+    /* width: 10px; */
+    z-index: 4;
+    background-image: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    font-size: 2rem;
+    /* background: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg) no-repeat center center fixed; */
+}
+.img-dish .btn-effect {
+    z-index: 5;
+}
+.btn-effect::after,
+.btn-effect::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -158,38 +174,42 @@ html {
     transition: all 0.4s;
 }
 
-.button-86::before {
+.btn-effect::before {
     transform: translate(0%, 0%);
     width: 100%;
     height: 100%;
+
     background: #28282d;
     border-radius: 10px;
 }
 
-.button-86::after {
+.btn-effect::after {
     transform: translate(10px, 10px);
+    opacity: 0;
     width: 35px;
     height: 35px;
-    background: #ffffff15;
+    background: #99999915;
+    border: 1px solid rgba(69, 69, 69, 0.14);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 50px;
 }
 
-.button-86:hover::before {
-    transform: translate(5%, 20%);
-    width: 110%;
-    height: 110%;
+.btn-effect:hover::before {
+    transform: translate(2%, 5%);
+    /* width: 110%;
+    height: 110%; */
 }
 
-.button-86:hover::after {
+.btn-effect:hover::after {
+    opacity: 1;
     border-radius: 10px;
     transform: translate(0, 0);
     width: 100%;
     height: 100%;
 }
 
-.button-86:active::after {
+.btn-effect:active::after {
     transition: 0s;
     transform: translate(0, 5%);
 }
