@@ -58,16 +58,16 @@ body {
 body.dark {
     --body-color: var(--bg-color);
 }
-/* .container {
-    background: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg) no-repeat center center fixed;
+.container {
+    background: url(../img/res/qwe.jpg) no-repeat center center fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     background: red;
-} */
-.
+}
+
 /* 
 .center {
     background: red;
@@ -76,9 +76,11 @@ body.dark {
 
 .footer {
     grid-area: 3 / 2 / 4 / 3;
-} */
+} 
+*/
+
 .bg-img {
-    background: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg) no-repeat center center fixed;
+    background: url(../img/res/qwe.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,8 +92,8 @@ body.dark {
     background-image: url("../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg");
     object-fit: cover;
 } */
-.layout {
-    /* background-color: #ff68d4; */
+/* .layout {
+    background-color: #ff68d4;
     color: #b6ccfe;
     text-align: center;
     align-items: center;
@@ -103,7 +105,7 @@ body.dark {
     grid-template-columns: 1fr;
     gap: 1rem;
     grid-auto-flow: column;
-}
+} */
 .dropShadow {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), rgb(0, 0, 0));
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
@@ -126,90 +128,4 @@ body.dark {
     align-items: start;
     vertical-align: text-top; */
     padding: 1rem;
-}
-/* <!-- HTML !--> */
-
-/* CSS */
-
-.btn-effect {
-    all: unset;
-    /* width: 100px; */
-    height: 30px;
-    font-size: 1.5rem;
-    background: transparent;
-    border: none;
-    position: relative;
-    color: #f0f0f0;
-    cursor: pointer;
-    z-index: 1;
-    padding: 50px 20px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none; */
-    /* touch-action: manipulation; */
-}
-.img-main .btn-effect {
-    /* width: 10px; */
-    z-index: 4;
-    background-image: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg);
-    background-size: cover;
-    width: 300px;
-    height: 200px;
-    font-size: 2rem;
-    /* background: url(../img/res/adrien-olichon-ZgREXhl8ER0-unsplash.jpg) no-repeat center center fixed; */
-}
-.img-dish .btn-effect {
-    z-index: 5;
-}
-.btn-effect::after,
-.btn-effect::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -99999;
-    transition: all 0.4s;
-}
-
-.btn-effect::before {
-    transform: translate(0%, 0%);
-    width: 100%;
-    height: 100%;
-
-    background: #28282d;
-    border-radius: 10px;
-}
-
-.btn-effect::after {
-    transform: translate(10px, 10px);
-    opacity: 0;
-    width: 35px;
-    height: 35px;
-    background: #99999915;
-    border: 1px solid rgba(69, 69, 69, 0.14);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 50px;
-}
-
-.btn-effect:hover::before {
-    transform: translate(2%, 5%);
-    /* width: 110%;
-    height: 110%; */
-}
-
-.btn-effect:hover::after {
-    opacity: 1;
-    border-radius: 10px;
-    transform: translate(0, 0);
-    width: 100%;
-    height: 100%;
-}
-
-.btn-effect:active::after {
-    transition: 0s;
-    transform: translate(0, 5%);
 }
