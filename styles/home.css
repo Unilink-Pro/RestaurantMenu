@@ -90,13 +90,13 @@ header .logo img {
 }
 
 .banner .content h4 {
-    color: rgb(65, 65, 65);
+    color: #000000;
     font-weight: 500;
 }
 
 .banner .content h4 span {
     padding: 0 10px;
-    border-right: 1px solid rgb(65, 65, 65);
+    border-right: 1px solid #000000;
 }
 
 .banner .content h4 span:first-child {
@@ -124,13 +124,12 @@ header .logo img {
     position: relative;
     display: inline-block;
     margin-right: 10px;
-    background: #de0611;
+    background: rgb(37, 167, 190);
     color: #fff;
     padding: 6px 20px;
     text-decoration: none;
     font-size: 1em;
-    /* font-size: large;
-    font-weight: 500; */
+border-radius: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -141,5 +140,5 @@ header .logo img {
 }
 
 .banner .content .buttons a:hover:nth-child(3) {
-    background: #de0611;
+    background: #B1DC76;
 }

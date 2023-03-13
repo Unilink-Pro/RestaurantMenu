@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/new-menu.css">
+    <title>Another Menu</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="heading">
+            <!-- <h1>LaTaza Cafe</h1> -->
+
+            <h3>&mdash; Food Menu &mdash;</h3>
+            <div class="header">
+                <h3 > <a href="healthy.html"> Healthy </a></h3>
+                <h3><a href="toast.html"> Toast </a> </h3>
+                <h3><a href="sandwiches.html"> Sandwiches </a> </h3>
+                <h3> <a href="croissant.html"> Croissant </a> </h3>
+                <h3><a href="frensh.html"> Frensh Toast </a> </h3>
+                <h3> <a href="healthy.html"> Pancakes </a> </h3>
+            </div>
+
+
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="food-item">
+            <img src="assets/toast.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Tuna Toast</h5>
+                    <h5 class="price">12 LYD</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="assets/sandwich.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> Sandwich</h5>
+                    <h5 class="price">12 LYD</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="assets/healthy.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Tuna Toast</h5>
+                    <h5 class="price">12 LYD</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="assets/toast.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Tuna Toast</h5>
+                    <h5 class="price">12 LYD</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="assets/toast.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Tuna Toast</h5>
+                    <h5 class="price">12 LYD</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="assets/toast.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Tuna Toast</h5>
+                    <h5 class="price">12 LYD</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
